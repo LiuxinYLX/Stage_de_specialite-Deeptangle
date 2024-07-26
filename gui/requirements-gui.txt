@@ -6,7 +6,7 @@ chex
 jax
 dm-pix
 scikit-learn
-numpy==1.21.6
+numpy==1.22.0
 numba==0.55
 matplotlib
 https://github.com/alonfnt/dm-haiku/archive/refs/heads/avg_pool_perf.zip
