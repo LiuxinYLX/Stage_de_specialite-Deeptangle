@@ -64,7 +64,8 @@ Voici les paramètres que vous pourrez modifier :
 
 3. **--pooling** = True/False 
 
-   > Si vous avez déjà testé une fois une vidéo et vous voulez juste modifier les paramètres pour obtenir un meilleur résultat, choisissez *False* pour réduire le temps d'exécution. *True* fonctionne dans tous les cas. 
+   > Si vous avez déjà testé une fois une vidéo et vous voulez juste modifier les paramètres pour obtenir un meilleur résultat, choisissez *False* pour réduire le temps d'exécution.
+   > *True* fonctionne dans tous les cas. 
 
    Exemple : --pooling = False 
 
