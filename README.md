@@ -1,9 +1,8 @@
 # Deeptangle
-# Manuel
 
 ## Installation
 
-1. Créer un environnement virtuel
+1. Créer un environnement virtuel avec Conda
 
    ```shell
    python3 -m venv venv
@@ -22,16 +21,20 @@
    pip install -e .
    ```
 
-   
+4. Télécharger les poids pré-entraînés
+
+   ```shell
+   wget https://sid.erda.dk/share_redirect/cEjIpG1yQl -O weights.zip
+   ```
 
 ## Configurer l'environnement
 
 1. Déplacez-vous dans le répertoire **deeptangle**
 2. Saisir dans le terminal : 
 
-```shell
-source venv/bin/activate
-```
+   ```shell
+   source venv/bin/activate
+   ```
 
 
 
@@ -40,11 +43,12 @@ source venv/bin/activate
 3. Déplacez-vous dans le répertoire **deeptangle**
 4. Saisir dans le terminal : 
 
-```python
-python3 code/main.py --model=weights/ --input=images/Movie_2.avi --pooling=True
-```
+   ```python
+   python3 code/main.py --model=weights/ --input=images/Movie_2.avi --pooling=True
+   ```
 
-
+Vous trouverez les résultats dans le répertoire images/resultat par défaut.
+Voici les paramètres que vous pourrez régler :
 
 ### Paramètres nécessaires
 
@@ -98,15 +102,9 @@ python3 code/main.py --model=weights/ --input=images/Movie_2.avi --pooling=True
 
 ### Nouveaux paramètres
 
-> Les paramètres visent à filtrer les prédictions. On les modifie rarement .
+> Les paramètres visent à filtrer les prédictions. Nous les modifions rarement .
 
 1. hausdorff_threshold
 2. distance_threshold
 3. nb_threshold
-Weights
 
-The weights used in the paper can be downloaded from here or by using the following commmand
-
-```shell
-wget https://sid.erda.dk/share_redirect/cEjIpG1yQl -O weights.zip
-```
